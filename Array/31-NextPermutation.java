@@ -1,3 +1,6 @@
+// Leetcode 31. Next Permutation
+// Difficulty: Medium
+
 class Solution {
     public void nextPermutation(int[] num) {
         int i= num.length-2;
