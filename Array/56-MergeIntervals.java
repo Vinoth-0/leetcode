@@ -7,10 +7,11 @@ class Solution {
         if (intervals.length <=1) {
             return new int[0][];
         }
+        // Sort the 2D Array
         Arrays.sort(intervals, (a,b) -> Integer.compare(a[0], b[0]));
         List<int[]> m = new ArrayList<>();
         int c[] = intervals[0];
-
+        // Make a loop for the array operations 
         for (int i = 1; i < intervals.length; i++) {
             if(intervals[i][0] <= c[1]){
                 c[1] = Math.max(c[1], intervals[i][1]);
