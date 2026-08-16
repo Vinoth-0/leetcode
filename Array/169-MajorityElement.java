@@ -1,3 +1,6 @@
+//Leetcode - 169 Majority Element
+// Difficulty - Easy
+
 class Solution {
     public int majorityElement(int[] nums) {
         int candidate = 0;
