@@ -1,3 +1,6 @@
+// Leetcode - 53 Maximum Subarray 1
+// Difficulty - Medium
+
 class Solution {
     public int maxSubArray(int[] nums) {
         int curSum=0;
