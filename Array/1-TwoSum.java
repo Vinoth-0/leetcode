@@ -8,9 +8,10 @@ class Solution {
             int complement = target - nums[i];
             if (map.containsKey(complement)) {
                 return new int[] { map.get(complement), i };
-            }
-            map.put(nums[i], i);
+            }else {
+                map.put(nums[i], i);
+            }    
         }
-        throw new IllegalArgumentException("No two sum solution");
+        return null;
     }
 }
